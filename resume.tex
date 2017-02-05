@@ -45,7 +45,7 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{: #2 \vspace{-1pt}}
   }
 }
 
@@ -57,14 +57,14 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-0pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-0pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -86,13 +86,15 @@
       {University of California, Santa Cruz}{Santa Cruz, CA}
       {Master of Science in Computer Science}{Sep. 2016 -- Dec. 2017(expected)}
        \resumeItemListStart
-        \resumeItem{Major courses:}{Algorithm Analysis, Image Processing and Computer Vision, Data Visualization, Computational Model of Discourse and Dialog, Programming Languages}
+        \resumeItem{GPA}{Overall 4.00/4.00}
+        \resumeItem{Major courses}{Algorithm Analysis, Image Processing and Computer Vision, Data Visualization, Computational Model of Discourse and Dialog, Programming Languages}
         \resumeItemListEnd
     \resumeSubheading
-      {Zhejiang University}{Hangzhou, China}
+      {College of Computer Science, Zhejiang University}{Hangzhou, China}
       {Bachelor of Engineering in Digital Media Technology}{Sep. 2012 -- June. 2016}
        \resumeItemListStart
-        \resumeItem{Major courses:}{C Programming, Data Structure, Computer Graphics, Computer Game Programming}
+        \resumeItem{GPA}{Overall: 3.82/4.00\qquad Major: 3.94/4.00}
+        \resumeItem{Major courses:}{C Programming, Data Structure, Database System, Object-Oriented Programming, Operating System, Artificial Intelligence, Computer Graphics, Computer Game Programming}
         \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -105,7 +107,7 @@
       {Web Development Intern}{Mar 2016 - Apr 2016}
       \resumeItemListStart
         \resumeItem{Font End}
-          {Designed an {\bf AJAX} interface which allows user to control real world game progress via smart phones.}
+          {Designed an web application using {\bf AJAX} which allows user to control real world game progress via smart phones.}
         \resumeItem{Back End}
           {Built the back end service with {\bf Node/Express} which receives commands from mobile phones and send signals to hardwares.}
       \resumeItemListEnd
@@ -115,7 +117,7 @@
       {Research Assistant}{Mar 2016 - Jun 2016}
       \resumeItemListStart
         \resumeItem{3D Rendering}
-          {Implement an high-performance interactive 3D viewer based on {\bf WebGL} that renders house and furnitures in real time.}
+          {Implement an interactive high-performance 3D viewer based on {\bf WebGL} that renders house and furnitures in real time.}
         \resumeItem{Model Editor}
           {Built a 3D model editor with {\bf JavaScript}. Users are allowed to add/remove components (furnitures) into the 3D space. It also supports importing 3D components from CEMO(a 3D model format based on XML) files and exporting the whole model into common 3D formats.}
       \resumeItemListEnd
@@ -125,18 +127,26 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
+    \resumeSubItem{Twitter Clustering and Topic Modeling}
+      {A pipeline for tweets preprocessing was built based on {\it NLTK}, {\it CMU Twitter NLP} and {\it scikit-learn}. KMeans, LDA, BTM are used for clustering and topic modeling. A lexcion normlization algorithm was implemented.}
+    \resumeSubItem{High Dynamic Range (HDR) Camera System}{
+       A radiometric calibration based on {\it scikit-learn} was implemented to recover linear raw camera data. Three different algorithms were exploited to produce the combined image.
+    }
     \resumeSubItem{Raspberry Pi Car}
-      {An Android app and a Raspberry Pi server software. Socket connection is established between two ends to acheive remote control. An $A\ast$ algorithm was used to find shortest route and navigate.}
+      {An Android app and a Raspberry Pi server software. Socket connection is established between two ends to acheive remote control. An $A\ast$ algorithm were implemented to find shortest route and navigate.}
     \resumeSubItem{Image Completion}
-      {Implemented a paper from SIGGRAPH 2005 based on {\bf OpenCV}. Given user specified structure lines, the algorithm removes object that shields certain structure in the image. A dynamic programming algorithm and a belief propagation algorithm are used to complete line sturcture. }
+      {Implemented a paper from SIGGRAPH 2005 based on {\it OpenCV}. Given user specified structure lines, the algorithm removes object that shields certain structure in the image. A dynamic programming algorithm and a belief propagation algorithm are used to complete line sturcture. }
+    
   \resumeSubHeadingListEnd
 
 \section{Skills}
-  \resumeSubHeadingListStart
-    \item{\textbf{Programming Languages:}
-      {C++, Java, HTML/CSS, JavaScript, Python}
-    }\\
-    \textbf{Softwares:}{Unix/Linux, jQuery, Bootstrap, Node.js, WebGL, OpenGL, OpenCV}
+  \resumeSubHeadingListStart 
+    \resumeSubItem{Programming Languages}
+      {C/C++, C\#, Java, JavaScript, HTML/CSS, Python, Haskell, SQL}
+    \resumeSubItem{Frameworks:}
+      {jQuery, Bootstrap, Node/Express, WebGL, OpenGL, OpenCV, Unity}
+    \resumeSubItem{Softwares:}
+      {Linux, Windows, Dreamweaver, Photoshop, Maya, Premiere}
   \resumeSubHeadingListEnd
 
 %--------PROGRAMMING SKILLS------------
