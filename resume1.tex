@@ -75,7 +75,7 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{http://users.soe.ucsc.edu/~chenzy}{\Large Ziyi Chen}} & Email : \href{mailto:zchen139@ucsc.edu}{zchen139@ucsc.edu}\\
-  \href{http://users.soe.ucsc.edu/~chenzy}{http://users.soe.ucsc.edu/$\sim$chenzy} & Mobile : +(831)435-9183 \\
+  \href{http://users.soe.ucsc.edu/~chenzy}{http://users.soe.ucsc.edu/$\sim$chenzy} & Mobile : (831)435-9183 \\
 \end{tabular*}
 
 
@@ -86,7 +86,7 @@
       {University of California, Santa Cruz}{Santa Cruz, CA}
       {Master of Science in Computer Science}{Sep. 2016 -- Dec. 2017(expected)}
        \resumeItemListStart
-        \resumeItem{GPA}{Overall 3.83/4.00}
+        % \resumeItem{GPA}{Overall 3.83/4.00}
         \resumeItem{Major courses}{Algorithm Analysis, Image Processing and Computer Vision, Data Visualization, Computational Model of Discourse and Dialog, Programming Languages, Data Mining}
         \resumeItemListEnd
     \resumeSubheading
@@ -106,10 +106,8 @@
       {Hangzhou Aika Co.}{Hangzhou, China}
       {Web Development Intern}{Mar 2016 - Apr 2016}
       \resumeItemListStart
-        \resumeItem{Font End}
-          {Designed a web application using {\bf AJAX} which allows users to control real world game progress via smartphones.}
-        \resumeItem{Back End}
-          {Built the back end service with {\bf Node/Express} which receives commands from mobile phones and send signals to hardware.}
+        \resumeItem{Font End \& Back End}
+          {Designed a web application using {\bf AJAX} which allows users to control real world game progress via smartphones. Built the back end service with {\bf Node/Express} which receives commands from mobile phones and send signals to hardware.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -127,8 +125,10 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Automatic Movie Rating System based on DouBan}
-      {Corpus was created by short comments crawled from Douban, which is a movie review website in Chinese. Use Sentence Length, TF-IDF and Sentimental Analysis as features. Employ SVM to train dataset by star grade and then classify test set.}  
+    \resumeSubItem{Persistent Key-Value Store from Scrach}
+      {Implemented a KVS that supports get, set and cas operations. Memory-mapped I/O functions were used to interact with SSD. Trie-based algorithms were exploited to achieve high-performance persistent indexing. }  
+    \resumeSubItem{Automatic Movie Rating System}
+      {Corpus was created by crawling short comments from Douban.com, which is the most popular movie review website in Chinese. Features used include Sentence Length, TF-IDF and Sentimental Analysis. Employed SVM from scikit-lean to train the predictor.}  
     \resumeSubItem{Twitter Clustering and Topic Modeling}
       {A pipeline for tweets preprocessing was built based on {\it NLTK}, {\it CMU Twitter NLP} and {\it scikit-learn}. KMeans, LDA, BTM were used for clustering and topic modeling. A lexicon normalization algorithm was implemented.}
     \resumeSubItem{High Dynamic Range (HDR) Camera System}{
@@ -146,7 +146,7 @@
     \resumeSubItem{Programming Languages}
       {C/C++, C\#, Java, JavaScript, HTML/CSS, Python, Haskell, SQL}
     \resumeSubItem{Frameworks:}
-      {jQuery, Bootstrap, d3, Vue, Webpack, Node/Express, WebGL, OpenGL, OpenCV}
+      {jQuery, Bootstrap, D3, Vue, Webpack, Node/Express, WebGL, OpenGL, OpenCV}
     \resumeSubItem{Softwares:}
       {Linux, Windows, MongoDB, Dreamweaver, Photoshop, Maya, Premiere, Unity}
   \resumeSubHeadingListEnd
