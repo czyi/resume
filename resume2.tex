@@ -1,0 +1,176 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+ 
+ %& Mobile : (831)435-9183 \\
+ % \textbf{\LARGE Ziyi Chen}} & Email : \href{mailto:zchen139@ucsc.edu}{zchen139@ucsc.edu}\\
+
+  \textbf{{\Large Ziyi Chen}} & Email : \href{mailto:zchen139@ucsc.edu}{zchen139@ucsc.edu}\\
+ {255 Union Ave, Campbell, CA 95008} & Mobile : (831)435-9183 \\
+
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, Santa Cruz}{Santa Cruz, CA}
+      {Master of Science in Computer Science}{Sep. 2016 -- Dec. 2017}
+       \resumeItemListStart
+        % \resumeItem{GPA}{Overall 3.83/4.00}
+        \resumeItem{Major courses}{Algorithm Analysis, Image Processing and Computer Vision, Data Visualization, Computational Model of Discourse and Dialog, Programming Languages, Data Mining, Machine Learning}
+        \resumeItemListEnd
+    \resumeSubheading
+      {College of Computer Science, Zhejiang University}{Hangzhou, China}
+      {Bachelor of Engineering in Digital Media Technology}{Sep. 2012 -- June. 2016}
+       \resumeItemListStart
+        % \resumeItem{GPA}{Overall: 3.82/4.00\qquad Major: 3.94/4.00}
+        \resumeItem{Major courses:}{C Programming, Data Structure, Database System, Object-Oriented Programming, Operating System, Artificial Intelligence, Computer Graphics, Computer Game Programming}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {MearView}{Santa Clara, CA}
+      {Software Engineering Intern}{June 2017 - Sep 2017}
+      \resumeItemListStart
+        \resumeItem{Virtual Shoes Fitting App}
+          {Implemented an {\bf iOS} app of markerless AR for real-time virtual shoes fitting in Objective-C. Tried different feature extraction and tracking algorithms based on {\bf OpenCV} in C++, such as ORB and optical flow. Also tested several monocular SLAM methods as well as image segmentation algorithms.}
+      \resumeItemListEnd  
+  
+    \resumeSubheading
+      {Hangzhou Aika Co.}{Hangzhou, China}
+      {Web Development Intern}{Mar 2016 - Apr 2016}
+      \resumeItemListStart
+        \resumeItem{Front End \& Back End}
+          {Designed a web application using {\bf AJAX} which allows users to control real-world game progress via smartphones. Built the back-end service with {\bf Node/Express} which receives commands from mobile phones and send signals to hardware.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {State Key Lab of CAD\&CG, Zhejiang University}{Hangzhou, China}
+      {Research Assistant}{Mar 2016 - Jun 2016}
+      \resumeItemListStart
+        \resumeItem{3D Rendering}
+          {Implemented an interactive high-performance 3D viewer based on {\bf WebGL} that renders house and furniture in real time.}
+        \resumeItem{Model Editor}
+          {Built a 3D model editor with {\bf JavaScript}. Users are allowed to add/remove components (furniture) into the 3D space. It also supports importing 3D components from CEMO(a 3D model format based on XML) files and exporting the whole model into common 3D formats.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart  
+  
+      \resumeSubItem{Neural Networks for Step Counting:}
+      {Trained LSTM models for step counting based on annotated smartphone sensor data from WeAllWork dataset using {\it TensorFlow}. The models were built for sighted people, blind people with white cane and guide dog separately for stratified leave-one-out training modality.}  
+  
+    \resumeSubItem{Persistent Key-Value Store from Scratch}
+      {Implemented a KVS that supports get, set and cas operations. Memory-mapped I/O functions were used to interact with SSD. Trie-based algorithms were exploited to achieve high-performance persistent indexing. }  
+    \resumeSubItem{Automatic Movie Rating System}
+      {Corpus was created by crawling short comments from Douban.com, which is the most popular movie review website in Chinese. Features used include Sentence Length, TF-IDF and Sentimental Analysis. Employed SVM from scikit-lean to train the predictor.}  
+    \resumeSubItem{Twitter Clustering and Topic Modeling}
+      {A pipeline for tweets preprocessing was built based on {\it NLTK}, {\it CMU Twitter NLP} and {\it scikit-learn}. KMeans, LDA, BTM were used for clustering and topic modeling. A lexicon normalization algorithm was implemented.}
+    \resumeSubItem{High Dynamic Range (HDR) Camera System}{
+       A radiometric calibration based on {\it scikit-learn} was implemented to recover linear raw camera data. Three different algorithms were exploited to produce the combined image.}
+   % \resumeSubItem{JavaBucks}
+    %{A website to measure and upload current cafes location and network speed. Baidu map was packaged as {\it Vue} component. {\it Webpack} was used to bundle front end assets. Built back end service with {\it Node/Express} and {\it MongoDB}.}
+    \resumeSubItem{Image Completion}
+      {Implemented a paper from SIGGRAPH 2005 based on {\it OpenCV}. Given user specified structure lines, the algorithm removes the object that shields certain structure in the image. A dynamic programming algorithm and a belief propagation algorithm were used to complete line structure. }
+
+%Raspberry Pi Car: An Android app and a Raspberry Pi server software. Socket connection is established between two ends to achieve remote control. An A∗ algorithm was implemented to find the shortest route and navigate.
+
+    
+  \resumeSubHeadingListEnd
+
+\section{Skills}
+  \resumeSubHeadingListStart 
+    \resumeSubItem{Programming Languages}
+      {C/C++, Objective-C, Java, JavaScript, HTML/CSS, Python, Haskell, SQL}
+    \resumeSubItem{Frameworks:}
+      {jQuery, Bootstrap, D3, Vue, Node/Express, OpenCV, OpenGL, WebGL, SceneKit, TensorFlow}
+    \resumeSubItem{Softwares:}
+      {Linux, Windows, MongoDB, Dreamweaver, Photoshop, Maya, Unity}
+  \resumeSubHeadingListEnd
+
+
+\end{document}
